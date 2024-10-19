@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial Membuat Tabel</title>
+    <style>
+        body{
+            padding-left: 40px ;
+            padding-right: 40px;
+        }
+        h2{
+            padding-top: 100px;
+        }
+        
+        table {
+            width: 50%;
+            border-collapse: collapse; /*menggabungkan border anatar sel*/
+        }
+        th, td {
+            border: 1px solid black; /*menambahkan border pada setiap sel*/
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #5a4bb7; /*memberi warna header tabel*/
+        }
+    </style>
+     <link
+     rel="stylesheet"
+     href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+   />
+
+   <!-- --------- CSS ---------- -->
+   <link rel="stylesheet" href="assets/css/style.css" />
+
+   <!-- --------- FAVICON ---------- -->
+   <link
+     rel="shortcut icon"
+     href="assets/images/favicon.png"
+     type="image/x-icon"
+   />
+
+</head>
+
+<body>
+    <div class="container">
+    <nav id="header" >
+        <div class="nav-logo">
+          <p class="nav-name">Tabel</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="tabel.html" class="nav-link">Cara Membuat Tabel</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="form.html" class="nav-link">Cara Membuat Form</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="tutorial.html" class="nav-link">Tutorial</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    </div>
+      
+    <h2>Basic HTML Tabel</h2>
+    <p>Dalam dokumen HTML, tabel dapat dibuat menggunakan elemen <code>&lt;table&gt;</code>. Tabel terdiri dari baris (<code>&lt;tr&gt;</code>) dan kolom (<code>&lt;td&gt;</code> untuk data dan <code>&lt;th&gt;</code> untuk header). Berikut adalah langkah-langkah untuk membuat tabel:</p>
+    <ol>
+        <li>Gunakan elemen <code>&lt;table&gt;</code> untuk memulai tabel.</li>
+        <li>Tambahkan elemen <code>&lt;thead&gt;</code> untuk bagian header tabel, dan di dalamnya gunakan <code>&lt;tr&gt;</code> untuk baris dan <code>&lt;th&gt;</code> untuk kolom header.</li>
+        <li>Gunakan elemen <code>&lt;tbody&gt;</code> untuk bagian isi tabel, dan di dalamnya tambahkan baris menggunakan <code>&lt;tr&gt;</code> dan kolom data menggunakan <code>&lt;td&gt;</code>.</li>
+        <li>Anda dapat menambahkan gaya menggunakan CSS untuk mempercantik tabel.</li>
+    </ol>
+    <!-- membuat tabel -->
+    <table>
+        <thead>
+        <tr>
+            <!-- th untuk header tabel menggunakan th -->
+            <th>nama</th>
+            <th>npm</th>
+            <th>ipk</th>
+            <th>semester</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- tr untuk menambah baris -->
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>8</td>
+        </tr>
+    
+        </tbody>
+    </table>
+
+       <!-- ----- TYPING JS Link ----- -->
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+       <script src="https://unpkg.com/scrollreveal"></script>
+   
+       <!-- ----- MAIN JS ----- -->
+       <script src="assets/js/main.js"></script>
+</body>
+</html>

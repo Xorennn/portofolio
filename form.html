@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Menambahkan style CSS untuk tampilan form -->
     <style>
         /* Pengaturan tampilan body agar form berada di tengah halaman */
         body {
             font-family: Arial, sans-serif;
-            background-color: #5a4bb7;
+            background-color: #bcaaaa;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -18,22 +20,23 @@
         }
 
         /* Pengaturan container form login */
-        .login-container {
-            background-color: #bcaaaa;
+        .login-container1 {
+          margin-top: 500px; 
+            background-color:  #807ae8;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Pengaturan judul form */
-        .login-container h2 {
+        .login-container1 h2 {
             margin-bottom: 20px;
             text-align: center;
         }
 
         /* Pengaturan input text dan password */
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
+        .login-container1 input[type="text"],
+        .login-container1 input[type="password"] {
             width: 100%; /* Lebar input 100% dari parent container */
             padding: 10px; /* Padding dalam input */
             margin: 10px 0; /* Jarak antar input */
@@ -42,13 +45,13 @@
         }
 
         /* Pengaturan tombol submit dan reset */
-        .login-container input[type="submit"],
-        .login-container input[type="reset"] {
+        .login-container1 input[type="submit"],
+        .login-container1 input[type="reset"] {
             width: 48%; /* Lebar tombol menjadi 48% agar dua tombol bisa berada dalam satu baris */
             padding: 10px;
             border: none; /* Menghilangkan border default pada tombol */
             border-radius: 4px; /* Membuat sudut tombol melengkung */
-            background-color: #807ae8; /* Warna latar tombol submit hijau */
+            background-color: #AD49E1; /* Warna latar tombol submit hijau */
             color: white; /* Warna teks tombol putih */
             cursor: pointer; /* Menampilkan pointer saat tombol di-hover */
             margin-top: 10px;
@@ -56,13 +59,13 @@
         }
 
         /* Pengaturan warna tombol reset (warna merah) */
-        .login-container input[type="reset"] {
+        .login-container1 input[type="reset"] {
             background-color: #f44336;
         }
 
         /* Efek hover saat tombol diklik */
-        .login-container input[type="submit"]:hover,
-        .login-container input[type="reset"]:hover {
+        .login-container1 input[type="submit"]:hover,
+        .login-container1 input[type="reset"]:hover {
             opacity: 0.9; /* Mengubah transparansi saat hover */
         }
     </style>
@@ -70,7 +73,7 @@
 <body>
 
     <!-- Container utama untuk form login -->
-    <div class="login-container">
+    <div class="login-container1">
         <h2>Login</h2>
         <!-- Form login, method POST digunakan untuk mengirim data secara aman -->
         <form action="/login" method="POST">
@@ -88,6 +91,144 @@
             </div>
         </form>
     </div>
+
+    <!-- code box -->
+    <main class="wrapper">
+    <section class="section" id="tutorials">
+   <!-- Card Style untuk Latihan Page Margin -->
+   <div class="tutorial-box">
+    <h2>Latihan form</h2>
+    <p>
+      Latihan untuk mengatur margin, indentasi, dan tata letak halaman
+      menggunakan HTML dan CSS langsung dari editor.
+    </p>
+
+    <h3>HTML & CSS Code:</h3>
+    <textarea
+      class="editor"
+      rows="20"
+      id="contentCode"
+      placeholder="Masukkan kode HTML dan CSS di sini"
+    >
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <!-- Menambahkan style CSS untuk tampilan form -->
+        <style>
+            /* Pengaturan tampilan body agar form berada di tengah halaman */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #bcaaaa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+    
+            /* Pengaturan container form login */
+            .login-container {
+                background-color: #AD49E1;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Pengaturan judul form */
+            .login-container h2 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+    
+            /* Pengaturan input text dan password */
+            .login-container input[type="text"],
+            .login-container input[type="password"] {
+                width: 100%; /* Lebar input 100% dari parent container */
+                padding: 10px; /* Padding dalam input */
+                margin: 10px 0; /* Jarak antar input */
+                border: 1px solid #ccc; /* Border abu-abu pada input */
+                border-radius: 4px; /* Membuat sudut input melengkung */
+            }
+    
+            /* Pengaturan tombol submit dan reset */
+            .login-container input[type="submit"],
+            .login-container input[type="reset"] {
+                width: 48%; /* Lebar tombol menjadi 48% agar dua tombol bisa berada dalam satu baris */
+                padding: 10px;
+                border: none; /* Menghilangkan border default pada tombol */
+                border-radius: 4px; /* Membuat sudut tombol melengkung */
+                background-color: #807ae8; /* Warna latar tombol submit hijau */
+                color: white; /* Warna teks tombol putih */
+                cursor: pointer; /* Menampilkan pointer saat tombol di-hover */
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+    
+            /* Pengaturan warna tombol reset (warna merah) */
+            .login-container input[type="reset"] {
+                background-color: #f44336;
+            }
+    
+            /* Efek hover saat tombol diklik */
+            .login-container input[type="submit"]:hover,
+            .login-container input[type="reset"]:hover {
+                opacity: 0.9; /* Mengubah transparansi saat hover */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Container utama untuk form login -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <!-- Form login, method POST digunakan untuk mengirim data secara aman -->
+            <form action="/login" method="POST">
+                <!-- Input username -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <!-- Input password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <!-- Tombol submit dan reset -->
+                <div style="display: flex; justify-content: space-between;">
+                    <input type="submit" value="Login"> <!-- Tombol submit untuk login -->
+                    <input type="reset" value="Reset"> <!-- Tombol reset untuk mengosongkan input -->
+                    <input type="submit" value="Register" id="" onclick="window.location.href='register.html'">
+                </div>
+            </form>
+        </div>
+    
+    </body>
+    </html>
+</textarea>
+
+    <button class="run-button" onclick="runContentCode()">Run</button>
+    <button class="undo-button" onclick="undoContentCode()">
+      Undo
+    </button>
+
+    <h3>Hasil:</h3>
+    <div class="preview" id="previewContent"></div>
+  </div>
+</section>
+</main>
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      function runContentCode() {
+          const contentCode = document.getElementById('contentCode').value;
+          document.getElementById('previewContent').innerHTML = contentCode;
+      }
+  
+      function undoContentCode() {
+          document.getElementById('contentCode').value = '';
+          document.getElementById('previewContent').innerHTML = '';
+      }
+  </script>
 
 </body>
 </html>

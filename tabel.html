@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tutorial Membuat Tabel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         body{
             padding-left: 40px ;
             padding-right: 40px;
+            background-color: #bcaaaa;
         }
         h2{
             padding-top: 100px;
@@ -25,6 +27,7 @@
         th {
             background-color: #5a4bb7; /*memberi warna header tabel*/
         }
+
     </style>
      <link
      rel="stylesheet"
@@ -32,7 +35,7 @@
    />
 
    <!-- --------- CSS ---------- -->
-   <link rel="stylesheet" href="assets/css/style.css" />
+   <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
 
    <!-- --------- FAVICON ---------- -->
    <link
@@ -44,7 +47,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
     <nav id="header" >
         <div class="nav-logo">
           <p class="nav-name">Tabel</p>
@@ -79,7 +82,7 @@
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
-    </div>
+    </div> -->
       
     <h2>Basic HTML Tabel</h2>
     <p>Dalam dokumen HTML, tabel dapat dibuat menggunakan elemen <code>&lt;table&gt;</code>. Tabel terdiri dari baris (<code>&lt;tr&gt;</code>) dan kolom (<code>&lt;td&gt;</code> untuk data dan <code>&lt;th&gt;</code> untuk header). Berikut adalah langkah-langkah untuk membuat tabel:</p>
@@ -162,6 +165,160 @@
         </tbody>
     </table>
 
+    <!-- code box -->
+    <main class="wrapper">
+      <section class="section" id="tutorials">
+     <!-- Card Style untuk Latihan Page Margin -->
+     <div class="tutorial-box">
+      <h2>Latihan form</h2>
+      <p>
+        Latihan untuk mengatur margin, indentasi, dan tata letak halaman
+        menggunakan HTML dan CSS langsung dari editor.
+      </p>
+  
+      <h3>HTML & CSS Code:</h3>
+      <textarea
+        class="editor"
+        rows="20"
+        id="contentCode"
+        placeholder="Masukkan kode HTML dan CSS di sini"
+      >
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial Membuat Tabel</title>
+    <style>
+        body{
+            padding-left: 40px ;
+            padding-right: 40px;
+            background-color: #bcaaaa;
+        }
+        h2{
+            padding-top: 100px;
+        }
+        
+        table {
+            width: 50%;
+            border-collapse: collapse; /*menggabungkan border anatar sel*/
+        }
+        th, td {
+            border: 1px solid black; /*menambahkan border pada setiap sel*/
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #5a4bb7; /*memberi warna header tabel*/
+        }
+    </style>
+     <link
+     rel="stylesheet"
+     href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+   />
+
+   <!-- --------- CSS ---------- -->
+   <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+
+   <!-- --------- FAVICON ---------- -->
+   <link
+     rel="shortcut icon"
+     href="assets/images/favicon.png"
+     type="image/x-icon"
+   />
+
+</head>
+
+<body>
+    <div class="container">
+    
+    <!-- membuat tabel -->
+    <table>
+        <thead>
+        <tr>
+            <!-- th untuk header tabel menggunakan th -->
+            <th>nama</th>
+            <th>npm</th>
+            <th>ipk</th>
+            <th>semester</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- tr untuk menambah baris -->
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <!-- td untuk kolom baris -->
+            <td>Aditya</td> 
+            <td>5220311041</td>
+            <td>2.5</td>
+            <td>8</td>
+        </tr>
+    
+        </tbody>
+    </table>
+</body>
+</html>
+  </textarea>
+  
+      <button class="run-button" onclick="runContentCode()">Run</button>
+      <button class="undo-button" onclick="undoContentCode()">
+        Undo
+      </button>
+  
+      <h3>Hasil:</h3>
+      <div class="preview" id="previewContent"></div>
+    </div>
+  </section>
+  </main>
+
        <!-- ----- TYPING JS Link ----- -->
        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -170,5 +327,16 @@
    
        <!-- ----- MAIN JS ----- -->
        <script src="assets/js/main.js"></script>
+       <script>
+        function runContentCode() {
+            const contentCode = document.getElementById('contentCode').value;
+            document.getElementById('previewContent').innerHTML = contentCode;
+        }
+    
+        function undoContentCode() {
+            document.getElementById('contentCode').value = '';
+            document.getElementById('previewContent').innerHTML = '';
+        }
+    </script>
 </body>
 </html>
